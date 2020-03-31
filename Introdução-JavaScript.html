@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Curso Javascript</title> 
+    </head>
+    <body>
+       
+        <script>
+       //AULA 1
+       console.log("Hello Word")
+       //AULA 2
+       console.log("--------------------")
+         var nome = "Diego";
+         var idade = 23;
+         var peso = 80.5;
+         
+
+         var alunos = ["Diego","Gabriel","Lucas"];
+
+         var aluno = {
+             nome: alunos[2],
+             idade : 23,
+             peso : 80.5,
+             
+         };
+         console.log(alunos[2]);
+         console.log(aluno.peso);
+       //AULA 3
+       console.log("---------------------")
+        var x = 10, y = 5;
+
+        var resultado = x + y;
+       
+        console.log(resultado);
+        var r = 15, w = 5;
+
+        r *= w;
+        
+        console.log(r);
+        //AULA 4
+        console.log("-------------------");
+        function soma(numero1,numero2){
+            var resultado = numero1 + numero2;
+
+            return resultado;
+        }
+       var resultado = soma(1,2);
+       console.log(resultado);
+       //AULA 5
+       console.log("----------------------------");
+       function retornaSexo(sexo){
+           // M,F
+           //Masculino, Feminino
+
+           if (sexo ==='M'){
+                return 'Masculino';
+           }   else if (sexo ==='F'){
+                return 'Feminino'
+           }else {
+                return 'Outro';
+                 }
+       }
+       var resultado = retornaSexo('M')
+           console.log(resultado);
+        //AINDA AULA 5
+        console.log("----------------------------");
+       function retornaSexo(sexo){
+           // M,F
+           //Masculino, Feminino
+        switch (sexo){
+            case 'M':
+                return 'Masculino';
+            case 'F':
+                return  'Feminino';
+            default:
+                return 'Outro'
+        }
+           
+       }
+       var resultado = retornaSexo('F')
+           console.log(resultado);
+        //AULA 6
+        console.log("---------------------------");
+            //AND && 
+
+        var sexo = 'M', idade = 23;
+
+        if (sexo === 'M' && idade >= 18) {
+            console.log('OK');
+            }
+        //AINDA AULA 6
+        console.log("---------------------------");
+             //OR ||
+
+        var sexo = 'F', idade = 10;
+
+            if (sexo === 'F' || idade >= 18) {
+                console.log('OK');
+        }
+        //AINDA AULA 6
+    //**    console.log("---------------------------");
+             //NOT !=
+
+        var sexo = 'F', idade = 30;
+
+            if (sexo === 'F' != idade >= 18) {
+                console.log('OK');
+        }
+        </script>
+    </body>
+</html>
