@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            
+        </div>
+        
+        <script>
+         var linkElement = document.createElement('a');
+
+         linkElement.setAttribute('href','https://www.google.com/search?q=passport+cuple&tbm=isch&ved=2ahUKEwjYlvKS6s_oAhVXBLkGHWPoCqcQ2-cCegQIABAA&oq=passport+cuple&gs_lcp=CgNpbWcQAzoECAAQQzoCCAA6BAgAEB46BAgAEBM6CAgAEAgQHhATULIUWIEoYIYvaABwAHgAgAFhiAG4BJIBATaYAQCgAQGqAQtnd3Mtd2l6LWltZw&sclient=img&ei=aQuJXpi-BteI5OUP49CruAo&bih=657&biw=1366&rlz=1C1GCEB_enBR893BR893#imgrc=rUdJuUKNVzrwSM');
+
+         var textElement = document.createTextNode('Acessa site');
+         linkElement.appendChild(textElement);7
+
+         var containerElement = document.querySelector('#app');
+         containerElement.appendChild(linkElement);
+        </script>
+    </body>
+</html>
